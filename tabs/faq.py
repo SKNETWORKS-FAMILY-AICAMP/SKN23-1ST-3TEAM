@@ -18,7 +18,7 @@ def format_answer(answer: str) -> str:
 
 
 def run():
-    st.header("❓ 기업 FAQ")
+    st.header("❓ 자동차 보험 FAQ (손해 보험 협회)")
 
     st.markdown("""
         <style>
