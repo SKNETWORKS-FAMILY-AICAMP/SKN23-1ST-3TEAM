@@ -10,3 +10,4 @@ db
 mysql-connector-python
 selenium
 pydeck
+streamlit_option_menu
