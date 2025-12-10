@@ -12,5 +12,3 @@ connection = mysql.connector.connect(
 
 if connection.is_connected():
     print("MySQL에 성공적으로 연결되었습니다.")
-
-connection.close()
