@@ -16,7 +16,20 @@ import streamlit as st
 
 # main.py에서 이 페이지를 실행할 때 호출할 메인 함수
 def run():
-    st.header("🔴 자동차 등록 · 🔵 폐차 비교 현황")
+    # 승연 icon 수정 251211
+    st.markdown("""
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    """, unsafe_allow_html=True)
+    st.markdown(
+                """
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+            <i class="bi bi-columns-gap" style="font-size:50px; color:#000000;"></i>
+            <h1 style="margin:0; padding:0;">등록 · 폐차 비교 현황</h1>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
 
     years = ["전체", "2021", "2022", "2023", "2024", "2025"]
 
@@ -303,7 +316,29 @@ def run():
                         subset=["승용(등록)", "승합(등록)", "화물(등록)", "특수(등록)", "총등록"])
     )
 
-    st.subheader("🚗 등록 · 폐차 통합 테이블")
+# 승연 icon 수정 251211
+    st.markdown(
+        """
+        <style>
+            .subheader-icon i {
+                font-size: 26px;
+                vertical-align: middle;
+                color: black;
+            }
+            .subheader-icon span {
+                font-size: 22px;
+                font-weight: 600;
+                margin-left: 0px;
+            }
+        </style>
+
+        <div class="subheader-icon" style="display:flex; align-items:center; gap:10px; margin:15px 0 10px 0;">
+            <i class="bi bi-play-fill"></i>
+            <span>등록 · 폐차 통합 레이블</span>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
     # 스타일링한 dataframe을 화면에 출력
     st.dataframe(styled, use_container_width=True)
@@ -314,7 +349,29 @@ def run():
     red = "#e60000"
     blue = "#3366ff"
 
-    st.subheader("🦋 등록 · 폐차 현황 비교 그래프(총합)")
+# 승연 icon 수정 251211
+    st.markdown(
+        """
+        <style>
+            .subheader-icon i {
+                font-size: 26px;
+                vertical-align: middle;
+                color: black;
+            }
+            .subheader-icon span {
+                font-size: 22px;
+                font-weight: 600;
+                margin-left: 0px;
+            }
+        </style>
+
+        <div class="subheader-icon" style="display:flex; align-items:center; gap:10px; margin:15px 0 10px 0;">
+            <i class="bi bi-play-fill"></i>
+            <span> 등록 · 폐차 현황 비교 그래프(총합)</span>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
     # ---------------------------
     # 6) 버터플라이 차트 (1) 전국 + 전체 → 지역별 등록 vs 폐차

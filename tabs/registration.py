@@ -26,7 +26,21 @@ def run():
         regions.remove("전국")
     regions.insert(0, "전국")
 
-    st.header("🔴 자동차 등록 현황")
+    # 승연 icon 수정 251211
+    st.markdown("""
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    """, unsafe_allow_html=True)
+
+    st.markdown(
+        """
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+            <i class="bi bi-car-front" style="font-size:50px; color:#000000;"></i>
+            <h1 style="margin:0; padding:0;">등록 현황</h1>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
     st.write("")
 
     years = ["전체", "2021", "2022", "2023", "2024", "2025"]
@@ -105,11 +119,28 @@ def run():
         df["총 등록대수"] = df[["승용", "승합", "화물", "특수"]].sum(axis=1)
 
         # 테이블 출력
-        st.subheader("🔴 등록 테이블")
+        # 승연 icon 수정 251211
+        st.markdown(
+            """
+            <h3 style="display:flex; align-items:center; gap:8px;">
+                <i class="bi bi-play-fill" style="font-size:24px; color:#000;"></i>
+                등록 현황 테이블
+            </h3>
+            """,
+            unsafe_allow_html=True
+    )
         st.dataframe(df.drop(columns=["lat", "lon"]))
 
         # 지도 출력
-        st.subheader("🔴 등록 지도")
+        st.markdown(
+            """
+            <h3 style="display:flex; align-items:center; gap:8px;">
+                <i class="bi bi-play-fill" style="font-size:24px; color:#000;"></i>
+                등록 현황 지도
+            </h3>
+            """,
+            unsafe_allow_html=True
+    )
 
         layer = pdk.Layer(
             "ColumnLayer",
@@ -138,7 +169,15 @@ def run():
         )
 
         # 그래프 출력
-        st.subheader("🔴 등록 그래프")
+        st.markdown(
+            """
+            <h3 style="display:flex; align-items:center; gap:8px;">
+                <i class="bi bi-play-fill" style="font-size:24px; color:#000;"></i>
+                등록 현황 그래프
+            </h3>
+            """,
+            unsafe_allow_html=True
+    )
 
         chart_data = df.drop(columns=["lat", "lon"]).set_index("지역")[["승용", "승합", "화물", "특수"]]
 

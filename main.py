@@ -49,7 +49,13 @@ button[aria-label="Toggle sidebar"] {
     transform: scale(1.12);
     background: black;
 }
+/* 사이드바 너비 조정 */
+section[data-testid="stSidebar"] {
+    width: 330px !important;
+}
 </style>
+            
+            
 """, unsafe_allow_html=True)
 
 # ===============================
