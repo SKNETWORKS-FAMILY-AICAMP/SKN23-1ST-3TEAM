@@ -2,7 +2,9 @@
 
 ## 팀명 : **서거니와 아이들**
 
-<div align="center"><img width="500" height="500" alt="23기 프로젝트 메인이미지" src="https://github.com/user-attachments/assets/1737a144-fd23-4b0b-b900-8aad8d6119c1" /></div>
+<div align="center">
+  <img src="./assets/main-image.png" alt="23기 프로젝트 메인이미지" width="500" height="500" />
+</div>
 
 ## 팀원 소개(23기 3팀)
 | <img width="100" height="107" alt="Image" src="https://github.com/user-attachments/assets/9ac3f2b6-de6e-4cbe-99c0-4aa9d8fec638" />  | <img width="100" height="108" alt="Image" src="https://github.com/user-attachments/assets/cd4ec9b6-588a-41cf-a464-3034df8e5f88" /> | <img width="100" height="99" alt="Image" src="https://github.com/user-attachments/assets/d60b9b93-8a49-49ec-85a3-6d85ce8e338c" /> | <img width="100" height="110" alt="Image" src="https://github.com/user-attachments/assets/6d956e12-eabe-471d-9b8f-bbd138f98510" />| 
@@ -109,10 +111,10 @@ Streamlit 기반 화면에서 연도·지역·차종별 등록/폐차 현황을 
 └── requirements.txt            # Python 패키지 의존성 목록
 ```
 ## ERD Diagram
-<img width="500" height="500"  alt="erd사진" src="https://github.com/user-attachments/assets/6d237b21-cc72-4229-9acb-202e3c457448" />
+<img src="./assets/erd.png" alt="erd사진" width="500" height="500" />
 
-## Table Specification 
-<img width="500" height="500" alt="테이블사진" src="https://github.com/user-attachments/assets/dfbc3abd-6ca1-492c-949f-303d10ed0c13" />
+## Table Specification
+<img src="./assets/table-spec.png" alt="테이블사진" width="500" height="500" />
 
 ---
 
@@ -122,7 +124,7 @@ Streamlit 기반 화면에서 연도·지역·차종별 등록/폐차 현황을 
 - **필수입력 :** 연도 선택 | 지역 선택 | 데이터조회
 - **출력화면 :** 등록 현황 테이블 | 등록 현황 지도 | 등록 현황 그래프
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/5f13c633-8384-440e-80c4-0cc8f955a8e1" alt="application" width="800px" />
+  <img src="./assets/reg.gif" alt="application" width="800" />
 </div>
 
 
@@ -137,7 +139,7 @@ Streamlit 기반 화면에서 연도·지역·차종별 등록/폐차 현황을 
 - **필수입력 :** 연도 선택 | 지역 선택 | 데이터조회
 - **출력화면 :** 폐차 현황 테이블 | 폐차 현황 지도 | 폐차 현황 그래프
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/bf850b32-bd99-4e6d-85e0-9d7ca2a07039" alt="application" width="800px" />
+  <img src="./assets/scrap.gif" alt="application" width="800" />
 </div>
 
   #### 기능 설명
@@ -151,7 +153,7 @@ Streamlit 기반 화면에서 연도·지역·차종별 등록/폐차 현황을 
 - **필수입력 :** 연도 선택 | 지역 선택 
 - **출력화면 :** 등록 · 폐차 통합 테이블 | 등록 · 폐차 현황 비교 그래프(총합) 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/6f2cc290-823d-4f7c-9363-bb45539deff7" alt="application" width="800px" />
+  <img src="./assets/compare.gif" alt="application" width="800" />
 </div>
 
   #### 기능 설명
@@ -166,7 +168,7 @@ Streamlit 기반 화면에서 연도·지역·차종별 등록/폐차 현황을 
 - **그외입력 :** 질문검색(키워드)
 - **출력화면 :** 검색조건 | 페이징 | 질문과 답
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/5490860b-4d67-4d18-b545-f71b73ad59a6" alt="application" width="800px" />
+  <img src="./assets/question.gif" alt="application" width="800" />
 </div>
 
   #### 기능 설명
