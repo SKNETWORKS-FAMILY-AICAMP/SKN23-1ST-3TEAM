@@ -82,7 +82,20 @@ def run():
         database="cardb"
     )
 
-    st.header("🔵 자동차 폐차 현황")
+        # 승연 icon 수정 251211
+    st.markdown("""
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        """, unsafe_allow_html=True)
+
+    st.markdown(
+            """
+            <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+                <i class="bi-wrench-adjustable" style="font-size:50px; color:#000;"></i>
+                <h1 style="margin:0; padding:0;">폐차 현황</h1>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
     st.write("")
 
     # ----------------------- UI -----------------------
@@ -188,14 +201,31 @@ def run():
         # ------------------------------------------------------
         # 🔵 폐차 테이블
         # ------------------------------------------------------
-        st.subheader("🔵 폐차 테이블")
+        # 승연 icon 수정 251211
+        st.markdown(
+            """
+            <h3 style="display:flex; align-items:center; gap:8px;">
+                <i class="bi bi-play-fill" style="font-size:22px; color:#000;"></i>
+                폐차 현황 테이블
+            </h3>
+            """,
+            unsafe_allow_html=True
+        )
         st.dataframe(df.drop(columns=["lat", "lon"]))
 
         # ------------------------------------------------------
         # 🔵 지도(전국 제외한 지역만 표시)
         # ------------------------------------------------------
-        st.subheader("🔵 폐차 지도")
-
+        # 승연 icon 수정 251211
+        st.markdown(
+            """
+            <h3 style="display:flex; align-items:center; gap:8px;">
+                <i class="bi bi-play-fill" style="font-size:22px; color:#000;"></i>
+                폐차 현황 지도
+            </h3>
+            """,
+            unsafe_allow_html=True
+        )
         map_df = df[df["지역"] != "전국"]
 
         if not map_df.empty:
@@ -228,7 +258,16 @@ def run():
         # ------------------------------------------------------
         # 🔵 그래프
         # ------------------------------------------------------
-        st.subheader("🔵 폐차 그래프")
+        # 승연 icon 수정 251211
+        st.markdown(
+            """
+            <h3 style="display:flex; align-items:center; gap:8px;">
+                <i class="bi bi-play-fill" style="font-size:22px; color:#000;"></i>
+                폐차 현황 그래프
+            </h3>
+            """,
+            unsafe_allow_html=True
+        )
 
         chart_df = df.drop(columns=["lat", "lon"]).set_index("지역")[["승용", "승합", "화물", "특수"]]
 

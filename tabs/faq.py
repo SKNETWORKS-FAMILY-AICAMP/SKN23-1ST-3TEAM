@@ -38,8 +38,22 @@ def format_answer(answer: str) -> str:
     return text.strip()
     # format_answer는 DB에서 온 답변 문자열을, 마크다운으로 예쁘게 보일 수 있게 가공하는 함수
 
+# 승연 icon 수정 251211
 def run():
-    st.header("❓ 자동차 보험 FAQ (손해 보험 협회)")
+    st.markdown("""
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        """, unsafe_allow_html=True)
+        
+    st.markdown(
+            """
+            <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+                <i class="bi bi-search" style="font-size:50px; color:#000;"></i>
+                <h1 style="margin:0; padding:0;">자동차 보험 FAQ (손해보험협회)</h1>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
 
     st.markdown("""
         <style>
@@ -122,14 +136,23 @@ def run():
     step_label = selected_step_name if 'selected_step_name' in locals() else "전체"
     keyword_label = key_f if key_f else "없음"
 
+# 승연 icon 수정 251211
+    st.markdown(
+        """
+        <h3 style="display:flex; align-items:center; gap:8px;">
+            <i class="bi bi-play-fill" style="font-size:24px; color:#000;"></i>
+            검색 조건
+        </h3>
+        """,
+        unsafe_allow_html=True
+    )
     st.markdown(
         f"""
-        ### 🔎 검색 조건  
-        - **유형:** {category_label}  
-        - **단계:** {step_label}  
-        - **검색어:** {keyword_label}
+        - 유형 : {category_label}  
+        - 단계 : {step_label}  
+        - 검색어 : {keyword_label}
         """,
-        unsafe_allow_html=True,
+        unsafe_allow_html=True
     )
 
     st.write("---")
