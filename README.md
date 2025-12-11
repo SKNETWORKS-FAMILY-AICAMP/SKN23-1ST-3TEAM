@@ -10,6 +10,8 @@
 | 정석원 | 김도영 | 송민채 | 이승연 |
 | 팀장/PM/BE | 팀원/BE/API | 팀원/DB/API | 팀원/FE/UI | 
 | 파이프라인 구성, 기업 FAQ 크롤링 및 CSV저장, DB (FAQ) 데이터 UI에 호출 | 공공데이터 API 추출 및 CSV 저장, DB (공공데이터) 데이터 UI에 호출 | DB 구축 및 ERD 설계, CSV데이터 DB에 삽입| Streamlit UI 구현 및 리드미 작성, 화면설계 |
+| [![GitHub - jsrop07](https://img.shields.io/badge/jsrop07-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jsrop07) | [![GitHub - rubyheartsping](https://img.shields.io/badge/rubyheartsping-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rubyheartsping) | [![GitHub - minchaesong](https://img.shields.io/badge/minchaesong-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/minchaesong) | [![GitHub - oooonbbo-wq](https://img.shields.io/badge/oooonbbo--wq-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/oooonbbo-wq) |
+
 
 ---
 
