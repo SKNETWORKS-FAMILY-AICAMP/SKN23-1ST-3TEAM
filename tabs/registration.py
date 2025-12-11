@@ -21,7 +21,7 @@ def run():
     regions = ["전국" if r == "총계" else r for r in regions]
 
     # ⭐ 중복 제거 + 전국 맨 앞으로
-    regions = list(sorted(set(regions)))
+    regions = list(regions)
     if "전국" in regions:
         regions.remove("전국")
     regions.insert(0, "전국")

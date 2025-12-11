@@ -93,7 +93,7 @@ def run():
     raw_regions = [normalize_region(r[0]) for r in cursor.fetchall()]
 
     # 중복 제거 + 오탈자 제거
-    regions = sorted(set([r for r in raw_regions if r in REGION_LIST]))
+    regions = [r for r in raw_regions if r in REGION_LIST]
 
     regions.insert(0, "전국")
 
