@@ -58,6 +58,8 @@ Streamlit 기반 화면에서 연도·지역·차종별 등록/폐차 현황을 
 
 ```bash
 .
+├── assets/                     # 이미지 파일 저장용 폴더
+│
 ├── crawler/                     # 크롤러 모듈
 │   ├── __init__.py
 │   ├── chromedriver.exe        # Selenium용 크롬 드라이버
