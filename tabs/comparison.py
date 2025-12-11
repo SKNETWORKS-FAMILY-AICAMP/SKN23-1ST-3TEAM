@@ -334,7 +334,7 @@ def run():
 
         <div class="subheader-icon" style="display:flex; align-items:center; gap:10px; margin:15px 0 10px 0;">
             <i class="bi bi-play-fill"></i>
-            <span>등록 · 폐차 통합 레이블</span>
+            <span>등록 · 폐차 통합 테이블</span>
         </div>
         """,
         unsafe_allow_html=True
